@@ -272,15 +272,12 @@ int main()
 
     return 0;
 }
-
+//TRIANGLE PATTERN
 #include <iostream>
 using namespace std;
 int main()
 {
-   //int n;
-   //cout<<"enter the value:";
-   //cin>>n; 
-   
+ 
    for(int i=0; i<=5; i++){
       for(int k=0; k<5-i;k++){
           cout<<" ";
@@ -296,3 +293,28 @@ int main()
 
     return 0;
 }
+
+//OPPOSITE OF TRIANGLE
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n = 5; // Number of rows in the triangle (can be taken as input)
+
+    for (int i = n; i >= 1; i--) {
+        // Print spaces to center the triangle
+        for (int k = 0; k < n - i; k++) {
+            cout << " ";
+        }
+        // Print stars for the current row
+        for (int j = 0; j < (2 * i - 1); j++) {
+            cout << "*";
+        }
+        // Move to the next line
+        cout << endl;
+    }
+
+    return 0;
+}
+
